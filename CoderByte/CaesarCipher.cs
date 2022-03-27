@@ -2,9 +2,9 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Gayle
+namespace CoderByte
 {
-    public class CoderByte_CaesarCipher
+    public class CaesarCipher
     {
         [Fact]
         public void Test()

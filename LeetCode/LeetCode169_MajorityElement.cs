@@ -1,9 +1,9 @@
 using System;
-using FluentAssertions;
 using System.Collections.Generic;
+using FluentAssertions;
 using Xunit;
 
-namespace Gayle
+namespace LeetCode
 {
     /// <summary>
     /// 1374. Generate a String With Characters That Have Odd Counts
