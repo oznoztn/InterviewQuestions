@@ -30,13 +30,13 @@ namespace CoderByte
         [Fact]
         public void Test()
         {
-            Execute("a").Should().Be(0);
-            Execute("aeio").Should().Be(0);
-            Execute("aeiou").Should().Be(5);
-            Execute("abcdeaeiaaioaaaaeiiiiouuuooaauuaeiu").Should().Be(13);
+            Execute("a").Should().Be("0");
+            Execute("aeio").Should().Be("0");
+            Execute("aeiou").Should().Be("5");
+            Execute("abcdeaeiaaioaaaaeiiiiouuuooaauuaeiu").Should().Be("13");
 
             
-            Execute("abceiou").Should().Be(0);
+            Execute("abceiou").Should().Be("0");
         }
 
         public string Execute(string str)
