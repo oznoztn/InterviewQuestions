@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoderByte", "CoderByte\Code
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codility", "Codility\Codility.csproj", "{B9171A5E-3B11-4F66-BB84-B9999295717F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerRank", "HackerRank\HackerRank.csproj", "{85DC956D-A5C2-4F7E-9A18-1EDDCB2207B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerRank", "HackerRank\HackerRank.csproj", "{85DC956D-A5C2-4F7E-9A18-1EDDCB2207B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingInterviewsExposed", "ProgrammingInterviewsExposed\ProgrammingInterviewsExposed.csproj", "{44A96053-0AE2-4514-A47F-D9B4C76BA4B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{85DC956D-A5C2-4F7E-9A18-1EDDCB2207B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85DC956D-A5C2-4F7E-9A18-1EDDCB2207B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85DC956D-A5C2-4F7E-9A18-1EDDCB2207B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44A96053-0AE2-4514-A47F-D9B4C76BA4B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44A96053-0AE2-4514-A47F-D9B4C76BA4B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44A96053-0AE2-4514-A47F-D9B4C76BA4B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44A96053-0AE2-4514-A47F-D9B4C76BA4B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
