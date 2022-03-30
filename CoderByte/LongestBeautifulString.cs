@@ -30,9 +30,18 @@ namespace CoderByte
         [Fact]
         public void Test()
         {
+            // Whenever the first char in the pair comes before the second char in the pair, i increase the counter
+            //      example: in the case of "ae", "a" comes before "e", so we increase the counter.
+
+            // It will increase the counter for incorrect pair for example "ou", just because "o" comes before "u"
+            // BUT the counter will be reset eventually. if the pair is incorrect, the counter will eventually reset to 1
+            //      example: for first iteration "ou" is valid, but for the second it is NOT, so the counter will be RESET to 1.
+
             Execute("a").Should().Be("0");
             Execute("aeio").Should().Be("0");
             Execute("aeiou").Should().Be("5");
+            Execute("ououououou").Should().Be("0");
+            Execute("aaaaeiiiiouuuaaaaeiiiiouuuuuuuuuooaauuaeiua").Should().Be("19");
             Execute("abcdeaeiaaioaaaaeiiiiouuuooaauuaeiu").Should().Be("13");
 
             
@@ -95,5 +104,4 @@ namespace CoderByte
             return maxLength.ToString();
         }
     }
-
 }
