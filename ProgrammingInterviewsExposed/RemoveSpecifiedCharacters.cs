@@ -16,7 +16,6 @@ namespace ProgrammingInterviewsExposed
     public class RemoveSpecifiedCharacters
     {
         [Fact] 
-        /// 
         public void Test1()
         {
             Execute("Ozan Ozten", "ae").Should().Be("Ozn Oztn");
@@ -28,7 +27,6 @@ namespace ProgrammingInterviewsExposed
             Execute3("Ozan Ozten", "ae").Should().Be("Ozn Oztn");
             Execute3("Battle of the Vowels: Hawaii vs. Grozny", "aeiou").Should().Be("Bttl f th Vwls: Hw vs. Grzny");
         }
-
 
         /// <summary>
         /// Brute Force - O(N^2)

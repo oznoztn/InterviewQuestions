@@ -34,13 +34,15 @@ namespace CoderByte
             //      example: in the case of "ae", "a" comes before "e", so we increase the counter.
 
             // It will increase the counter for incorrect pair for example "ou", just because "o" comes before "u"
-            // BUT the counter will be reset eventually. if the pair is incorrect, the counter will eventually reset to 1
-            //      example: for first iteration "ou" is valid, but for the second it is NOT, so the counter will be RESET to 1.
+            // BUT the if the pair is incorrect, the counter will be reset to 1 eventually.
+            //      example: for first iteration "oux" is valid, but for the second it is NOT, so the counter will be RESET to 1.
 
+            
             Execute("a").Should().Be("0");
             Execute("aeio").Should().Be("0");
             Execute("aeiou").Should().Be("5");
             Execute("ououououou").Should().Be("0");
+            Execute("aeiouaaeeiioouu").Should().Be("10");
             Execute("aaaaeiiiiouuuaaaaeiiiiouuuuuuuuuooaauuaeiua").Should().Be("19");
             Execute("abcdeaeiaaioaaaaeiiiiouuuooaauuaeiu").Should().Be("13");
 
@@ -64,8 +66,8 @@ namespace CoderByte
 
             for (var i = 1; i != str.Length; ++i)
             {
-                //var n = str[i - 1];
-                //var npost = str[i];
+                var n = str[i - 1];
+                var npost = str[i];
 
                 if (str[i - 1] == str[i])
                 {
