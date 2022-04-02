@@ -13,12 +13,12 @@ namespace LeetCode
         [Fact]
         public void Test()
         {
-            IsValid("aA").Should().Be("Aa");
-            IsValid("hello").Should().Be("holle");
-            IsValid("leetcode").Should().Be("leotcede");
+            Execute("aA").Should().Be("Aa");
+            Execute("hello").Should().Be("holle");
+            Execute("leetcode").Should().Be("leotcede");
         }
 
-        public string IsValid(string s)
+        public string Execute(string s)
         {
             StringBuilder strb = new StringBuilder();
 
