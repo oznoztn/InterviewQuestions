@@ -7,7 +7,7 @@ namespace LeetCode
     /// <summary>
     /// 20. Valid Parentheses
     /// </summary>
-    public class LeetCode20_ValidParantheses
+    public class L020ValidParantheses
     {
         [Fact]
         public void Test()
