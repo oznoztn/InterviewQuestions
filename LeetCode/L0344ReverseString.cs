@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FluentAssertions;
@@ -30,7 +29,7 @@ namespace LeetCode
     /// 1 &lt;= s.length &lt;= 105
     /// s[i] is a printable ascii character.
     /// </summary>
-    public class L344ReverseString
+    public class L0344ReverseString
     {
         [Fact]
         public void Test()

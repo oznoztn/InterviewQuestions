@@ -5,31 +5,13 @@ using Xunit;
 
 namespace LeetCode
 {
-    /// <summary>
-    /// 1374. Generate a String With Characters That Have Odd Counts
-    /// </summary>
-    public class LeetCode26
+    public class L0013RomanToInteger
     {
         [Fact]
         public void Test()
         {
-            Execute(new int[] { 1, 1 }).Should().Be(1);
-            Execute(new int[] { 1, 1, 1, 2 }).Should().Be(2);
-            Execute(new int[] { 1, 1, 1, 2, 3 }).Should().Be(3);
-            Execute(new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 }).Should().Be(5);
-        }
-
-        public int Execute(int[] nums)
-        {
-            return 1;
-        }
-    }
-
-    public class Leet13_RomanToInteger
-    {
-        [Fact]
-        public void Test()
-        {
+            Execute("I").Should().Be(1);
+            Execute("X").Should().Be(10);
             Execute("XIIV").Should().Be(13);
             Execute("LVIII").Should().Be(58);
             Execute("MCMXCIV").Should().Be(1994);
@@ -78,23 +60,23 @@ namespace LeetCode
                 
                 if (numerals[ch] < numerals[chPost])
                 {
-                    sum += numerals[ch] * (-1);
+                    sum += numerals[ch] * -1;
                     pos++;
                 }
                 else if (numerals[ch] == numerals[chPost])
                 {
-                    var inner_sum = 0;
+                    var innerSum = 0;
                     for (int i = pos; i < roman.Length; i++)
                     {
                         if (ch == roman[i])
                         {
-                            inner_sum += numerals[ch];
+                            innerSum += numerals[ch];
                             pos++;
 
                             if (pos == roman.Length)
                             {
                                 // pos -> son index'e karþýlýk geliyor demektir
-                                sum += inner_sum;
+                                sum += innerSum;
                                 break;
                             }
                         }
@@ -102,12 +84,12 @@ namespace LeetCode
                         {
                             if (numerals[ch] < numerals[roman[i]]) // isRightNumeralBigger
                             {
-                                sum += inner_sum * (-1);
+                                sum += innerSum * (-1);
                                 break;
                             }
                             else
                             {
-                                sum += inner_sum;
+                                sum += innerSum;
                                 break;
                             }
                         }

@@ -17,7 +17,7 @@ namespace LeetCode
     /// <summary>
     /// 20. Valid Parentheses
     /// </summary>
-    public class L389FindTheDifference
+    public class L0389FindTheDifference
     {
         [Fact]
         public void Test()

@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Experiments
+namespace Sundry._Experiments
 {
     public class ReversingIntegerExperiment
     {

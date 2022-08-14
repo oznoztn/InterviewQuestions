@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using Xunit;
 
-namespace LeetCode.CodeWars
+namespace Sundry.CodeWars
 {
     /// <summary>
     /// Ben işi biraz daha zorlaştırdım.

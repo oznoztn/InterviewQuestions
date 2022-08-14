@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Xunit;
 
-namespace CoderByte
+namespace Sundry.Coderbyte
 {
     public class CaesarCipher
     {

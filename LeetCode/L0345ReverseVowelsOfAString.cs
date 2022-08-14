@@ -1,6 +1,5 @@
-using System.Collections.Generic;
-using System.Text;
 using FluentAssertions;
+using System.Text;
 using Xunit;
 
 namespace LeetCode
@@ -8,7 +7,7 @@ namespace LeetCode
     /// <summary>
     /// 20. Valid Parentheses
     /// </summary>
-    public class L345ReverseVowelsOfAString
+    public class L0345ReverseVowelsOfAString
     {
         [Fact]
         public void Test()

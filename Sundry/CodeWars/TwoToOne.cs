@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using Xunit;
 
-namespace LeetCode.CodeWars
+namespace Sundry.CodeWars
 {
     /// <summary>
     /// Take 2 strings s1 and s2 including only letters from ato z.

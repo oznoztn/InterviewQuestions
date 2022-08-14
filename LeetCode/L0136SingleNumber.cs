@@ -27,7 +27,7 @@ namespace LeetCode
     /// Output: 1
     /// 
     /// </summary>
-    public class L136SingleNumber
+    public class L0136SingleNumber
     {
         [Fact]
         public void Test()

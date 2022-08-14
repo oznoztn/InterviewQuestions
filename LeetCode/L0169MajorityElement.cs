@@ -8,7 +8,7 @@ namespace LeetCode
     /// <summary>
     /// 1374. Generate a String With Characters That Have Odd Counts
     /// </summary>
-    public class L169MajorityElement
+    public class L0169MajorityElement
     {
         [Fact]
         public void Test()

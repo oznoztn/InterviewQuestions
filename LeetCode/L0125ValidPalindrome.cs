@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FluentAssertions;
@@ -39,7 +38,7 @@ namespace LeetCode
     /// s consists only of printable ASCII characters.
     /// 
     /// </summary>
-    public class L125ValidPalindrome
+    public class L0125ValidPalindrome
     {
         [Fact]
         public void Test()

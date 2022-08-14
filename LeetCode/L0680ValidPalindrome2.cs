@@ -27,7 +27,7 @@ namespace LeetCode
     /// s consists of lowercase English letters.
     /// 
     /// </summary>
-    public class L680ValidPalindrome2
+    public class L0680ValidPalindrome2
     {
         [Fact]
         public void Test()
