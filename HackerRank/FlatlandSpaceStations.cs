@@ -42,20 +42,16 @@ namespace HackerRank
 
             Array.Sort(c);
             
-            int newMax = 0;
+            int newMax;
             for (int i = 0; i < c.Length - 1; i++)
             {
                 var curr = c[i];
                 var next = c[i + 1];
 
                 if ((next - curr + 1) % 2 == 0)
-                {
                     newMax = (next - curr + 1) / 2 - 1;
-                }
                 else
-                {
                     newMax = (next - curr + 1) / 2;
-                }
 
                 if (newMax > max)
                     max = newMax;
